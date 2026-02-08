@@ -1,6 +1,8 @@
 import os
 import sys
 from dataclasses import dataclass
+from sklearn.metrics import r2_score
+from sklearn import BaseEstimator, RegressorMixin
 
 from catboost import CatBoostRegressor
 from sklearn.ensemble import (
